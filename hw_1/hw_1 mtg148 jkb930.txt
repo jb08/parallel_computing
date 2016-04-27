@@ -1,0 +1,43 @@
+Mike Gofron
+Jason Brown
+EECS 358 Homework 1
+
+1. 
+a) O(n*(2m-1)) ; each row takes m multiplications and (m-1) additions; n rows
+b) O(2nm/p + m) ; 2 operations per inner loop, m inner loops, n outer loops, plus final summation that takes m operations (doesn’t count assignment as an operation)
+c) Sp = Ts / Tp = (n(2m-1) / (2nm/p + m))
+   Amdahl’s fraction 
+   [read and re-group]
+
+2. (what do the -o and -lpthread mean?)
+
+a) logged in
+
+b) 
+serial calculation of pi: 0:12.95 secs
+explicit parallelization:
+  parallel p=1: 0:13.62 secs
+  parallel p=4: 0:03.96 secs
+  parallel p=8: 0:02.83 secs
+
+implicit parallelization (static scheduling):
+  parallel p=1: 0:13.39 secs
+  parallel p=4: 0:03.35 secs
+  parallel p=8: 0:02.35 secs
+
+implicit parallelization (dynamic scheduling):
+  parallel p=1: 0:45.44 secs
+  parallel p=4: 2:14.72 secs
+  parallel p=8: 2:17.37 secs
+
+c) 
+
+implicit parallelization (static scheduling):
+  parallel p=1: 0:03.40 secs
+  parallel p=4: 0:01.29 secs
+  parallel p=8: 0:00.85 secs
+
+3. Solving dense linear equations
+
+
+
